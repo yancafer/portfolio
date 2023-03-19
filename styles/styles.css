@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+
+/*Reset da página*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.navigation{
+    /*Padding: primeiro valor é o de cima,
+    segundo valor é direta,
+    terceiro valor é baixo,
+    quarto valor é esquerda
+    */
+    background-color: #0C002E;
+}
+
+.navigation__menu{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 2% 0% 2% 0%;
+}
+
+.navigation__menu__link{
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    color: #ffffff;
+}
