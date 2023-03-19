@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
 
 
 /*Reset da página*/
@@ -12,6 +12,7 @@ body{
     box-sizing: border-box;
 }
 
+/*Menu*/
 .navigation{
     /*Padding: primeiro valor é o de cima,
     segundo valor é direta,
@@ -22,15 +23,49 @@ body{
 }
 
 .navigation__menu{
+    /*Cria uma box para começar a mexer nela*/
     display: flex;
+    /*Cria um espaçamento entre os itens*/
     gap: 40px;
+    /*Alinha os itens da box*/
     justify-content: center;
+    /*Coloca espaçamento entre os itens de acordo com o tamanho da box em %*/
     padding: 2% 0% 2% 0%;
 }
 
 .navigation__menu__link{
+    /*Tamanho da fonte, normalmente colocar em rem para se adaptar a acessibilidade no navegador (aumento de fonte do navegador)*/
     font-size: 2.5rem;
+    /*Tira todo o sublinhado da fonte onde possui links*/
     text-decoration: none;
+    /*Família da fonte*/
     font-family: 'Dosis', sans-serif;
+    /*Cor da fonte*/
     color: #ffffff;
+}
+
+/* Conteúdo da página */
+.content{
+    display: flex;
+    align-items: center;
+    /*Direção da box*/
+    flex-direction: column;
+    /*Cor de fundo da box*/
+    background-color: #0C002E;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.content__title{
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    /*Peso da fonte*/
+    font-weight: 600;
+    font-size: 5.3rem;
+}
+
+.content__subtitle{
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
 }
