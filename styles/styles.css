@@ -12,6 +12,7 @@ body{
     box-sizing: border-box;
 }
 
+/* ---------------------------------------------------- */
 /*Menu*/
 .navigation{
     /*Padding: primeiro valor é o de cima,
@@ -44,19 +45,27 @@ body{
     color: #ffffff;
 }
 
+/* ---------------------------------------------------- */
 /* Conteúdo da página */
 .content{
     display: flex;
     align-items: center;
     /*Direção da box*/
     flex-direction: column;
-    /*Cor de fundo da box*/
-    background-color: #0C002E;
-    padding-top: 15%;
-    padding-bottom: 15%;
 }
 
-.content__title{
+.content__section__one{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    /*Cor de fundo da box*/
+    background-color: #0C002E;
+}
+
+.content__section__title{
     color: #ffffff;
     font-family: 'Dosis', sans-serif;
     /*Peso da fonte*/
@@ -64,8 +73,34 @@ body{
     font-size: 5.3rem;
 }
 
-.content__subtitle{
+.content__section__subtitle{
     color: #ffffff;
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
+}
+
+
+/* Section dois */
+.content__section__two{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    background-color: #000210;
+    justify-content: space-between;
+    padding: 8% 0% 8% 0%;
+}
+
+.content__section__two__paragraph{
+    color: #ffffff;
+    width: 45%;
+    padding-left: 8%;
+    font-size: 1.25rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+}
+
+.content__section__two__image{
+    width: 30%;
+    padding-right: 8%;
 }
