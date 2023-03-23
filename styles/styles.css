@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
 
+:root {
+    --azul-principal: #0C002E;
+    --fonte-principal: 'Dosis';
+}
 
 /*Reset da página*/
 *{
@@ -8,41 +12,39 @@
 }
 
 body{
-    height: 100vh;
+    display: flex;
     box-sizing: border-box;
+    flex-direction: column;
 }
 
 /* ---------------------------------------------------- */
 /*Menu*/
 .navigation{
-    /*Padding: primeiro valor é o de cima,
-    segundo valor é direta,
-    terceiro valor é baixo,
-    quarto valor é esquerda
-    */
-    background-color: #0C002E;
+    background-color: var(--azul-principal);
+    padding: 1%;
 }
 
 .navigation__menu{
-    /*Cria uma box para começar a mexer nela*/
     display: flex;
-    /*Cria um espaçamento entre os itens*/
-    gap: 3.75rem;
-    /*Alinha os itens da box*/
+    gap: 10rem;
     justify-content: center;
-    /*Coloca espaçamento entre os itens de acordo com o tamanho da box em %*/
-    padding: 2% 0% 2% 0%;
+    list-style-type: none;
 }
 
 .navigation__menu__link{
-    /*Tamanho da fonte, normalmente colocar em rem para se adaptar a acessibilidade no navegador (aumento de fonte do navegador)*/
     font-size: 2rem;
-    /*Tira todo o sublinhado da fonte onde possui links*/
     text-decoration: none;
-    /*Família da fonte*/
-    font-family: 'Dosis', sans-serif;
-    /*Cor da fonte*/
+    font-family: var(--fonte-principal);
     color: #ffffff;
+
+}
+.navigation__menu__link a:hover {
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.navigation__menu__link a:active{
+    color: red;
 }
 
 /* ---------------------------------------------------- */
@@ -51,18 +53,8 @@ body{
     display: flex;
     align-items: center;
     /*Direção da box*/
-    flex-direction: column;
-}
-
-.content__section__one{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    /*Cor de fundo da box*/
-    background-color: #0C002E;
+    flex-direction: row;
+    background-color: var(--azul-principal);
 }
 
 .content__section__title{
@@ -80,27 +72,33 @@ body{
 }
 
 
-/* Section dois */
-.content__section__two{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 100vw;
-    background-color: #000210;
-    justify-content: space-between;
-    padding: 8% 0% 8% 0%;
-}
 
-.content__section__two__paragraph{
-    color: #ffffff;
-    width: 45%;
-    padding-left: 8%;
-    font-size: 1.25rem;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 400;
-}
 
-.content__section__two__image{
-    width: 30%;
-    padding-right: 8%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navigation{
+        padding: 3%;
+    }
 }
