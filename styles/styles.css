@@ -7,12 +7,12 @@
 }
 
 /*Reset da página*/
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -40,6 +40,7 @@ body{
     color: #ffffff;
 
 }
+
 .navigation__menu__link:hover {
     background-color: #ffffff;
     color: #000000;
@@ -88,13 +89,23 @@ Faz com que o botão quando ativo, fique na cor definida
     align-items: center;
 }
 
-.footer__media {
-
-}
+.footer__media {}
 
 .footer__social__media {
     text-decoration: none;
-    color:var(--branco);
+    color: var(--branco);
+}
+
+.instagram:hover {
+    color: red;
+}
+
+.linkedin:hover{
+    color: red;
+}
+
+.github:hover{
+    color: red;
 }
 
 
@@ -124,7 +135,7 @@ Faz com que o botão quando ativo, fique na cor definida
 
 
 @media (max-width: 768px) {
-    .navigation{
+    .navigation {
         padding: 3%;
     }
 }
