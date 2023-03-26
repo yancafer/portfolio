@@ -55,7 +55,7 @@ Faz com que o botão quando ativo, fique na cor definida
 */
 
 /* ---------------------------------------------------- */
-/* Conteúdo da página */
+/* Conteúdo da página inicial */
 .content {
     background-color: var(--azul-principal);
     padding: 15%;
@@ -89,8 +89,6 @@ Faz com que o botão quando ativo, fique na cor definida
     align-items: center;
 }
 
-.footer__media {}
-
 .footer__social__media {
     text-decoration: none;
     color: var(--branco);
@@ -106,6 +104,33 @@ Faz com que o botão quando ativo, fique na cor definida
 
 .github:hover{
     color: red;
+}
+
+/* ---------------------------------------------------- */
+/* Conteúdo da página sobre */
+
+.section__about {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.section__about__div {
+
+}
+
+.section__about__title {
+    color: var(--branco);
+    font-size: 50px;
+}
+
+.section__about__paragraph {
+    color: var(--branco);
+
+}
+
+.content__section__two__image {
+    width: 80%;
 }
 
 
