@@ -16,6 +16,8 @@
 body {
     font-size: 100%;
     background-color: var(--azul-principal);
+    height: 100vh;
+	box-sizing: border-box;
 }
 
 .navigation {
