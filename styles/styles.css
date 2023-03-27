@@ -48,7 +48,8 @@ body {
 .content {
     display: flex;
     justify-content: center;
-    padding: 12.5rem;
+    background-color: red;
+    padding: 100px;
 }
 
 .content__section {
