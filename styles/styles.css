@@ -17,7 +17,7 @@ body {
     font-size: 100%;
     background-color: var(--azul-principal);
     height: 100vh;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .navigation {
@@ -38,7 +38,7 @@ body {
     font-family: var(--fonte-principal);
     text-decoration: none;
     font-size: 2rem;
-    
+
 }
 
 .navigation__menu__link:hover {
@@ -89,6 +89,50 @@ body {
     font-family: 'Dosis', sans-serif;
     font-size: 1.90rem;
 }
+
+/*-------------------------------------*/
+/*Página Sobre*/
+
+.content__about {
+    display: flex;
+    flex-direction: row;
+}
+
+.content__about__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.content__about__image {
+    width: 55%;
+    border-radius: 10px;
+}
+
+.content__about__div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-right: 100px;
+    gap: 1.25rem;
+    
+}
+
+.content__about__div__title {
+    color: var(--branco);
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+}
+
+.content__about__div__paragraph {
+    color: var(--branco);
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+
+
 
 /*
 @media (max-width: 768px) {
